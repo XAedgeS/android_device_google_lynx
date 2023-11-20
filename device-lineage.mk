@@ -149,3 +149,9 @@ PRODUCT_PACKAGES += \
 
 # Properties
 TARGET_VENDOR_PROP := $(LOCAL_PATH)/vendor.prop
+
+# crDroid Features
+TARGET_HAS_UDFPS := true
+TARGET_ENABLE_BLUR := true
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.sys.sf.disable_blurs=1
